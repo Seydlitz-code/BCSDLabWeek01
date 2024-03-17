@@ -6,16 +6,16 @@ public class Code : MonoBehaviour
 {
     private void Awake()
     {
-        float floatValue = 69.6875f;
-        double doubleValue = (double)floatValue;
+        float floatValue = 0.9f;
+        int intValue = (int)floatValue;
 
         Debug.Log("floatValue : " + floatValue);
-        Debug.Log("doubleValue : " + doubleValue);
+        Debug.Log("inValue : " + intValue);
+        
+        floatValue = 1.1f;
+        intValue = (int)floatValue;
 
-        floatValue = 0.1f;
-        doubleValue = (double)floatValue;
-
-		Debug.Log("floatValue : " + floatValue);
-		Debug.Log("doubleValue : " + doubleValue);
+        Debug.Log("floatValue : " + floatValue);
+        Debug.Log("inValue : " + intValue);
 	}
 }
