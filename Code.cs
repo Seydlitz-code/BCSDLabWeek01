@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class Code : MonoBehaviour
 {
-    private void Awake()
-    {
-        string stringValue = "초기화";
-        int intValue = 33;
-        float floatValue = 12.3456f;
-        Debug.Log("stringValue : " + stringValue);
-
-        //정수를 문자열로 형 변환
-        stringValue = intValue.ToString();
-		Debug.Log("stringValue : " + stringValue);
-
-        //실수를 문자열로 형 변환
-        stringValue = floatValue.ToString();
-		Debug.Log("stringValue : " + stringValue);
+	private void Awake()
+	{
+		const int PlayerIdle = 0;
+		const int PlayerMove = 1;
+		const int PlayerAttack = 2; 
+		int playerState = PlayerAttack;
+		switch (playerState)
+		{
+			case PlayerIdle: 
+				Debug.Log("플레이어 상태 : 대기");
+				break;
+			case PlayerMove: 
+				Debug.Log("플레이어 상태 : 이동");
+				break;
+			case PlayerAttack:
+				Debug.Log("플레이어 상태 : 공격"); // 올바른 Debug.Log 호출
+				break;
+		}
 	}
 }
