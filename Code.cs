@@ -6,10 +6,16 @@ public class Code : MonoBehaviour
 {
     private void Awake()
     {
-        string stringValue = "안녕하세요. 이동환입니다.";
-        bool boolValue = true;
+        object valueInt = 31;
+        //빅싱 (데이터 저장)
+        object valueFloat = 3.14159265358979f;
+        //빅싱 (데이터 저장)
+        object valueString = "객체지향 프로그래밍";
+        object valueBool = false;
 
-        Debug.Log("string Data : " + stringValue);
-        Debug.Log("bool Data : " +  boolValue);
-    }
+        Debug.Log("정수 : " + valueInt);
+		Debug.Log("실수 : " + valueFloat);
+		Debug.Log("문자열 : " + valueString);
+		Debug.Log("논리 : " + valueBool);
+	}
 }
